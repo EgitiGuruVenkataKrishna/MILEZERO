@@ -1,0 +1,16 @@
+{
+  "name": "milezero-career-roadmap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MILEZERO personalised career-roadmap web product",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check test/smoke.test.mjs && node --check scripts/check-inline.mjs && node scripts/check-inline.mjs",
+    "test": "node --test",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

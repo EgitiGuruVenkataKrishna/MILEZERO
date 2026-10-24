@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: milezero
+    runtime: node
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: MAX_AI_CONCURRENT
+        value: "2"
+      - key: AI_CALLS_PER_IP_PER_HOUR
+        value: "12"
+      # Add secret values in the hosting dashboard. Do not commit them to this file.
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PUBLIC_APP_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM_EMAIL
+        sync: false
+      - key: TURNSTILE_SITE_KEY
+        sync: false
+      - key: TURNSTILE_SECRET_KEY
+        sync: false
+      - key: TRUST_PROXY
+        value: "false"

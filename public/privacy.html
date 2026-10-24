@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy · MILEZERO</title>
+  <style>
+    :root{color-scheme:light;--paper:#f3f0e8;--ink:#181a16;--muted:#5e6259;--acid:#d8ff3e;--line:#d7d4ca}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:860px;margin:0 auto;padding:32px 22px 80px}.top{display:flex;justify-content:space-between;gap:18px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.brand{font-weight:900;letter-spacing:-.06em;text-decoration:none;color:var(--ink);font-size:20px}.label{font:11px ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(42px,8vw,82px);line-height:.98;letter-spacing:-.075em;margin:54px 0 20px}h2{font-size:25px;letter-spacing:-.04em;margin-top:42px}.intro{font-size:20px;max-width:720px;color:#373a32}.notice{background:#fff6d7;border-left:4px solid #c78a27;padding:16px;margin:24px 0}.notice strong{display:block;margin-bottom:6px}a{color:inherit}li{padding:3px 0}.footer{border-top:1px solid var(--line);margin-top:60px;padding-top:18px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+  <div class="top"><a class="brand" href="/">MILEZERO ↗</a><span class="label">Privacy notice / Draft</span></div>
+  <h1>Privacy, plainly.</h1>
+  <p class="intro">MILEZERO helps people turn a career goal into a practical roadmap. We aim to collect as little as possible and make email updates opt-in, confirmed, and easy to stop.</p>
+  <div class="notice"><strong>Before public launch: this is a template, not legal advice.</strong>Replace the operator and contact placeholders, confirm the real hosting/data flow, and have the policy reviewed for the countries where you will market the product. Do not publish while any placeholder remains.</div>
+  <p><strong>Effective date:</strong> 24 October 2026<br><strong>Operator:</strong> [LEGAL NAME / BUSINESS ENTITY]<br><strong>Privacy contact:</strong> [PRIVACY CONTACT EMAIL]<br><strong>Registered/contact address, if legally required:</strong> [BUSINESS ADDRESS]</p>
+
+  <h2>1. What we collect</h2>
+  <ul>
+    <li><strong>Email address and subscription records:</strong> if you choose product updates, we record the address, consent timestamp/version, confirmation state, and unsubscribe state.</li>
+    <li><strong>Roadmap answers:</strong> the goal, current status, available time, experience, constraints, and follow-up answers you enter are sent to Google Gemini to generate questions and your roadmap. The production design does not intentionally save those answers in MILEZERO's subscriber database.</li>
+    <li><strong>Basic request data:</strong> the server may process IP/network information temporarily for abuse prevention and rate limits. Hosting providers may maintain operational logs under their own terms.</li>
+    <li><strong>Browser storage:</strong> the app may store the email you entered locally to pre-fill a repeat visit. Downloaded roadmap progress is stored inside the browser/file in which you use the downloaded HTML, depending on that browser's local-storage support.</li>
+  </ul>
+
+  <h2>2. Why we use it</h2>
+  <p>We use the email address to manage a subscription only when you explicitly opt in and confirm it; process your answers to create the requested roadmap; prevent automated abuse; operate the service; and respond to privacy or support requests. Marketing consent is optional. You can use the free route without opting into updates.</p>
+
+  <h2>3. AI processing</h2>
+  <p>Roadmap answers are transmitted to the Gemini API operated by Google. Do not enter passwords, government identifiers, private employer information, confidential client data, or sensitive personal information. Google handles API inputs and outputs under the terms and data-use settings applicable to the account and service tier used by MILEZERO. The operator must verify those terms before launch and must not promise a data-retention or training policy that has not been confirmed for its actual project.</p>
+
+  <h2>4. Who processes data for us</h2>
+  <p>Production may use Google for AI generation, Supabase for the email-subscriber database, Resend for confirmation emails, Cloudflare Turnstile for anti-abuse verification, and a hosting provider. Add or remove providers here to match the deployed application. Each provider operates under its own terms and privacy documentation.</p>
+
+  <h2>5. Email confirmation and unsubscribe</h2>
+  <p>Marketing subscriptions use a confirmation link. Pending confirmations expire after 24 hours. Every confirmation email includes an unsubscribe link. When someone unsubscribes, we retain a minimal suppression record as needed to honour that request and prevent accidental re-subscription. Do not upload purchased, scraped, or otherwise unconsented email lists.</p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>Pending confirmation tokens expire after 24 hours. Confirmed addresses are retained until the person unsubscribes or requests deletion, subject to minimal suppression records or other legal obligations. Questionnaire answers are intended to remain transient and are not deliberately stored in the subscriber database. The operator must configure and periodically test log retention, database backups, and deletion workflows before launch.</p>
+  <p>For access, correction, or deletion requests, email <a href="mailto:[PRIVACY CONTACT EMAIL]">[PRIVACY CONTACT EMAIL]</a>. Replace that placeholder before publication.</p>
+
+  <h2>7. Security</h2>
+  <p>Secret API keys belong only on the server. We use HTTPS in production, server-side input validation, security headers, request-size limits, rate limits, and anti-bot verification for email signup. No internet service can promise perfect security; we will investigate credible reports and rotate compromised credentials.</p>
+
+  <h2>8. Your choices and legal rights</h2>
+  <p>Your rights depend on where you live and the law that applies, and may include access, correction, deletion, withdrawal of consent, objection, or complaint to a regulator. MILEZERO's operator must publish a functioning contact and implement the legally required request process before launch. A click on an unsubscribe link stops marketing email but does not necessarily erase a minimal suppression record.</p>
+
+  <h2>9. Children</h2>
+  <p>MILEZERO is a career-planning tool, not designed to collect data from children. If the product is made available to minors, the operator must review age-appropriate design and parental-consent obligations for each target market before launch.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this notice when the product, providers, or legal requirements change. The current version and effective date will be published on this page. Material changes to marketing consent will be handled in a way that respects applicable law.</p>
+  <div class="footer">MILEZERO / A plan is not a promise. <a href="/terms.html">Terms of use</a> · <a href="/">Back to MILEZERO</a></div>
+</main></body></html>

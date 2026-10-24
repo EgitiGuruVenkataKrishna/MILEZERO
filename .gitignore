@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/subscribers.json
+data/*.tmp
+.DS_Store
+*.log
