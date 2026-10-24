@@ -22,10 +22,10 @@ This repository grows the original visual prototype into a launch-oriented MVP s
 Browser (public/index.html)
   ├── GET /api/health
   ├── POST /api/subscribe  ── Turnstile verification ── Supabase waitlist table
-  │                                               └── Resend double-opt-in email
+  │                                                           └── Resend double-opt-in email
   ├── POST /api/question-plan ── Gemini API
   └── POST /api/roadmap ───────── Gemini API
-                                    ↓
+                                     ↓
 Browser generates and downloads a standalone interactive .html roadmap
 ```
 
@@ -49,8 +49,8 @@ Open `http://localhost:4173`. Without a Gemini key, the app uses its demonstrati
 PowerShell example:
 
 ```powershell
-$env:GEMINI_API_KEY="YOUR_GEMINI_KEY"
-$env:GEMINI_MODEL="gemini-3.8-flash"
+\$env:GEMINI_API_KEY="YOUR_GEMINI_KEY"
+\$env:GEMINI_MODEL="gemini-3.8-flash"
 node server.mjs
 ```
 
@@ -61,7 +61,6 @@ Do not place real keys in `public/`, HTML, client JavaScript, a screenshot, or G
 ### 1. Gemini
 
 Set:
-
 - `GEMINI_API_KEY`
 - `GEMINI_MODEL` (the prepared default is `gemini-3.8-flash`; verify the exact current model string and your account's limits before deployment)
 - `MAX_AI_CONCURRENT` (default 2)
@@ -136,5 +135,3 @@ Manual and production integration checks live in `TEST-CHECKLIST.md`. Specifical
 ## Launch rule
 
 Treat MILEZERO as a free beta until P0 testing is completed and signed off. Do not announce job-placement outcomes, guaranteed timelines, verified resource links, or a purchasable Premium tier. Announce the product only after the actual production app—not just the local demo—passes the test checklist.
-#   M I L E Z E R O  
- 
